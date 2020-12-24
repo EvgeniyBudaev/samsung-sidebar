@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+/*-------------------- Global Styles --------------------*/
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-------------------- Sidebar Styles --------------------*/
+nav {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav .drop-btn {
+  width: 400px;
+  background-color: #fff;
+  color: #000;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav .drop-btn span {
+  line-height: 50px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav .wrapper {
+  position: absolute;
+  top: 65px;
+  display: flex;
+  width: 400px;
+  overflow: hidden;
+  background: #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav .wrapper.show {
+  display: flex;
+}
+
+nav .wrapper .mobile-drop,
+nav .wrapper .tv-drop {
+  display: none;
+}
+
+nav .wrapper ul {
+  width: 400px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav .wrapper ul li {
+  line-height: 55px;
+}
+
+nav .wrapper ul li a {
+  position: relative;
+  color: #000;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+nav .wrapper ul li:hover a {
+  background-color: #3a3b3c;
+}
+
+.wrapper ul li a .icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.wrapper ul li a i {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.wrapper ul .arrow {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper ul .arrow span::before {
+  margin-right: 15px;
+}
+
